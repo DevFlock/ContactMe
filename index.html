@@ -13,11 +13,11 @@
     <h1 class="title">Send me a Email!</h1>
     <hr id="titleline">
     <p>This is a place where you can send me a email, for support, questions or anything in general!</p>
-    <textarea type="text" id="subject" placeholder="Email Title" class="input" size="30"></textarea><br>
-    <textarea type="text" id="inbody" placeholder="Email Body" class="input" size="30"></textarea><br>
-    <button id="button" onclick="sendEmail(); showdiv()">Send Email</button>
-    <p id="status"></p>
-    <div id="output">
+    <textarea type="text" id="subject" placeholder="Email Title" class="input" size="30"></textarea><br> <!--The First text field for the Title-->
+    <textarea type="text" id="inbody" placeholder="Email Body" class="input" size="30"></textarea><br> <!--The second text field for the body of the text-->
+    <button id="button" onclick="sendEmail(); showdiv(); disableb();">Send Email</button> <!--The button that triggers the function to send the email-->
+    <p id="status"></p> <!--Says when the email has been sent-->
+    <div id="output"> <!--The div with the email inside-->
         <p id="title"></p>
         <p id="body"></p>
     </div>
