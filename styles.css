@@ -70,3 +70,9 @@ hr {
     border: 5px solid #191919;
     border-radius: 10px;
 }
+
+#warning {
+    color: #606060;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
