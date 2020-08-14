@@ -45,7 +45,7 @@ hr {
     background-color: #191919;
     border: 3px solid white;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 14px 20px;
     text-align: center;
     color: white;
@@ -78,6 +78,16 @@ hr {
 }
 
 #warning_splitter {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 20px;
+}
+
+#button:disabled {
+    background-color: transparent;
+    color: white;
+    cursor: not-allowed;
+}
+
+#status {
+    color: green;
 }
