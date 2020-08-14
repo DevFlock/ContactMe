@@ -28,4 +28,8 @@ function showdiv() {
     } else {
       x.style.display = "none";
     }
-  }
+}
+
+function disableb() {
+    document.getElementById("button").disabled = true;
+}
