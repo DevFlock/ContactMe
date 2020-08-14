@@ -76,3 +76,8 @@ hr {
     font-size: 15px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+#warning_splitter {
+    margin-top: 300px;
+    margin-bottom: 20px;
+}
