@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Website title</title>
+    <script src="hidden.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="showdiv()">
+<center>
+    <h1 class="title">Send me a Email!</h1>
+    <hr id="titleline">
+    <p>This is a place where you can send me a email, for support, questions or anything in general!</p>
+    <textarea type="text" id="subject" placeholder="Email Title" class="input" size="30"></textarea><br>
+    <textarea type="text" id="inbody" placeholder="Email Body" class="input" size="30"></textarea><br>
+    <button id="button" onclick="sendEmail(); showdiv()">Send Email</button>
+    <p id="status"></p>
+    <div id="output">
+        <p id="title"></p>
+        <p id="body"></p>
+    </div>
+</center>
+</body>
+
+</html>
