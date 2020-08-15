@@ -1,3 +1,6 @@
+const pass = config.PASSWORD
+const email = config.EMAIL
+
 function sendEmail() {
     showdiv()
     var contact = document.getElementById("contactinfo").value;
@@ -6,10 +9,10 @@ function sendEmail() {
     var body = inbodytext + "<br><br><br>Contact info:" + contact;
     Email.send({
         Host: "smtp.gmail.com",
-        Username : "flocknotif@gmail.com",
-        Password : "pfemzvbzoujntvhx",
-        To : "flocknotif@gmail.com",
-        From : "flocknotif@gmail.com",
+        Username : email,
+        Password : pass,
+        To : email,
+        From : email,
         Subject : subjecttitle,
         Body : body,
     })
