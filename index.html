@@ -2,7 +2,8 @@
 
 <head>
     <title>Contact Me</title>
-    <script src="hidden.js"></script>
+    <script type="text/javascript" src="Sourcejs.js"></script>
+    <script type='text/javascript' src='config.js'></script>
     <link rel="stylesheet" href="styles.css">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
@@ -15,6 +16,7 @@
     <p>This is a place where you can send me a email, for support, questions or anything in general!</p>
     <textarea type="text" id="subject" placeholder="Email Title" class="input" size="30"></textarea><br> <!--The First text field for the Title-->
     <textarea type="text" id="inbody" placeholder="Email Body" class="input" size="30"></textarea><br> <!--The second text field for the body of the text-->
+    <textarea type="text" id="contactinfo" placeholder="How to contact you (Email, Discord)" class="input" size="30"></textarea><br> <!--Contact Info-->
     <button id="button" onclick="sendEmail(); showdiv(); disableb();">Send Email</button> <!--The button that triggers the function to send the email-->
     <p id="status"></p> <!--Says when the email has been sent-->
     <div id="output"> <!--The div with the email inside-->

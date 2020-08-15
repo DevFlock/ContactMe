@@ -1,15 +1,17 @@
 function sendEmail() {
     showdiv()
+    var contact = document.getElementById("contactinfo").value;
     var subjecttitle = document.getElementById("subject").value;
     var inbodytext = document.getElementById("inbody").value;
+    var body = inbodytext + "<br><br><br>Contact info:" + contact;
     Email.send({
         Host: "smtp.gmail.com",
-        Username : EMAIL,
-        Password : PASSWORD,
-        To : EMAIL,
-        From : EMAIL,
+        Username : "flocknotif@gmail.com",
+        Password : "pfemzvbzoujntvhx",
+        To : "flocknotif@gmail.com",
+        From : "flocknotif@gmail.com",
         Subject : subjecttitle,
-        Body : inbodytext,
+        Body : body,
     })
     .then(success());
 }
