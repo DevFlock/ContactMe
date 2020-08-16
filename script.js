@@ -1,6 +1,6 @@
 const emailname = config.EMAIL
 const password = config.PASS
-
+// Test
 function sendEmail() {
     showdiv()
     var contact = document.getElementById("contactinfo").value;
