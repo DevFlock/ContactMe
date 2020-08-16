@@ -1,5 +1,5 @@
-const pass = config.PASSWORD
-const email = config.EMAIL
+const emailname = config.EMAIL
+const password = config.PASS
 
 function sendEmail() {
     showdiv()
@@ -9,10 +9,10 @@ function sendEmail() {
     var body = inbodytext + "<br><br><br>Contact info:" + contact;
     Email.send({
         Host: "smtp.gmail.com",
-        Username : email,
-        Password : pass,
-        To : email,
-        From : email,
+        Username : emailname,
+        Password : password,
+        To : emailname,
+        From : emailname,
         Subject : subjecttitle,
         Body : body,
     })
