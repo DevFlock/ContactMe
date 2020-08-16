@@ -6,8 +6,8 @@ function sendEmail() {
     var body = inbodytext + "<br><br><br>Contact info:" + contact;
     Email.send({
         SecureToken : "09111750-24e6-4094-a6b2-d977382eb0a9",
-        To : emailname,
-        From : emailname,
+        To : "flocknotif@gmail.com",
+        From : "flocknotif@gmail.com",
         Subject : subjecttitle,
         Body : body,
     })
