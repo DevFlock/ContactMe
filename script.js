@@ -1,6 +1,3 @@
-const emailname = config.EMAIL
-const password = config.PASS
-
 function sendEmail() {
     showdiv()
     var contact = document.getElementById("contactinfo").value;
@@ -8,9 +5,7 @@ function sendEmail() {
     var inbodytext = document.getElementById("inbody").value;
     var body = inbodytext + "<br><br><br>Contact info:" + contact;
     Email.send({
-        Host: "smtp.gmail.com",
-        Username : emailname,
-        Password : password,
+        SecureToken : "09111750-24e6-4094-a6b2-d977382eb0a9",
         To : emailname,
         From : emailname,
         Subject : subjecttitle,
